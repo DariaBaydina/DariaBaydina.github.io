@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), 
+    local('Roboto-Regular'),
+     url('../fonts/Roboto.woff2') format('woff2'), 
+     url('../fonts/Roboto.woff') format('woff'), 
+     url('../fonts/Roboto.ttf') format('truetype');
+   
+}@font-face {
+    font-family: 'RobotoMedium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Robotomedium'), 
+    local('Roboto-Medium'),
+     url('../fonts/Robotomedium.woff2') format('woff2'), 
+     url('../fonts/Robotomedium.woff') format('woff'), 
+     url('../fonts/Robotomedium.ttf') format('truetype');
+   
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.card__info {
+    font-family: 'RobotoMedium', Arial, sans-serif;
+    line-height: 1.2;
+}
+
+:root {
+    --black: #121212;
+    --grey: #414141;
+    --white: #FFFFFF;
+
+}
+    
