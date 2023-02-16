@@ -1,0 +1,349 @@
+.card {
+    display: flex;
+    gap: 0 4%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/background.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__info {
+    width: calc(100%-638px);
+    height: 100%;
+}
+
+.card__avatar {
+    min-width: 638px;
+    height: 100%;
+    position: relative;
+    background-image: url('../images/card__pic.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.card__avatar-text {
+    position: absolute;
+    padding: 14px 0;
+    background-color: var(--black);
+    color: var(--white);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(24px + 40*(100vw/1920));
+}
+
+.title__name {
+    color: var(--black);
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.title__city {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.soc-media {
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+}
+
+.soc-media__icon {
+    width: 50px;
+}
+
+.stack, .about {
+    color: var(--black);
+    font-size: calc(16px + 16*(100vw/1920));    
+}
+
+.stack__title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.stack__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 25px;
+    margin-bottom: 50px;
+}
+
+.tag {
+    padding: 14px 55px;
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 45px;
+}
+
+.tag:hover {
+    opacity: 0.7;
+}
+
+.about__text {
+    margin-bottom: 50px;
+    max-width: 1026px;
+}
+
+.about__paragraph {
+    margin-top: 20px;
+}
+
+.about__paragraph::before {
+    content: '__';
+    opacity: 0;
+}
+
+.form {
+   display: flex;
+   gap: 0 4%;
+   flex-wrap: wrap;
+   max-width: 702px;
+
+}
+ 
+.form__text {
+    color: var(--black);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    margin-bottom: 25px;
+    border-color: var(--black);
+    border-radius: 11px;
+    max-width: 48%;
+    font-size: calc(16px + 16*(100vw/1920));
+}
+
+.form__text::placeholder {
+    font-size: calc(16px + 16*(100vw/1920));
+    color: var(--black);
+}
+
+.button {
+    min-width: 100%;
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 11px;
+    border: none;
+    font-size: calc(16px + 16*(100vw/1920));
+    line-height: 1.2em;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: var(--grey); 
+}
+
+
+@media screen and (max-width: 992px) {
+    
+    .card {
+        gap: 0 45px;
+    }
+
+    .card__avatar {
+        min-width: 372px;
+        height: 100vh;
+        background-position: top;
+        background-size: auto 91%;
+    }
+    
+    .card__avatar-text {
+        font-size: 36px;
+        line-height: 42px;
+        padding: 12px 0;
+    }
+    .card__info {
+        max-width: calc(100%-372px);
+    }
+
+    .title__name {
+        font-size: 32px;
+        line-height: 38px;
+        margin-top: 12px;
+    }
+
+    .title__city {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    } 
+    
+    .stack__title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .stack__title, .stack__tags, .about__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .stack__tags {
+        gap: 20px;
+        max-width: 476px;
+        margin-bottom: 30px;
+    }
+
+    .tag {
+        padding: 10px 45px;
+    }
+
+    .about__text {
+        max-width: 530px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+   .about__paragraph {
+        margin-top: 10px;
+    }
+
+    .soc-media__icon {
+        width: 40px;
+    }
+
+    .form {
+        gap: 0 20px;
+    }
+
+    .form__text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+        max-width: 232px;
+        font-size: 24px;
+    }
+    
+    .form__text::placeholder {
+        font-size: 24px;
+    }
+
+    .button {
+        min-width: 484px;
+        padding: 10px 134px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+   
+    .container {
+        height: 100%;
+        background-image: url('../images/background.png');
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: auto 44%;
+    }
+    
+    .card {
+        flex-direction: column;
+        max-width: 390px;
+        width: 100%; 
+        background-image: none;
+        height: 100%;
+    }
+
+    .card__avatar {
+        width: 100%;
+        min-height: 689px;
+        margin: 0 auto;
+        background-size: auto 96%;
+        background-position: top;
+        margin: 0 75px;
+    }
+
+    .card__avatar-text {
+        width: 390px;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 12px 0px;  
+    }
+
+    .card__info {
+        width: 100%;
+        margin: 0 75px;
+        padding-bottom: 30px;
+    }
+
+    .title__name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .title__name, .stack__title {
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+
+    .title__city {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 16px;   
+    }
+
+    .stack__title, .about__title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .stack__tags {
+        margin-bottom: 16px;
+    }
+
+    .tag {
+        font-size: 16px;
+        padding: 8px 35px;
+    }
+    
+    .about__text {
+        margin-top: 10px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 354px;
+    }
+
+    .about__paragraph {
+        margin-top: 10px;
+    }
+    .soc-media__icon {
+        width: 32px;
+    }
+
+    .form__text {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+        max-width: 185px;
+        font-size: 16px;
+    }
+    
+    .form__text::placeholder {
+        font-size: 16px;
+    }
+
+    .button {
+        min-width: 390px;
+        padding: 8px 123px;
+        font-size: 16px;
+        line-height: 19px;
+    
+    }
+}
